@@ -57,18 +57,23 @@
             <div class="form-group">
                 <div class="form-row">
                     <div class="form-col">
-                        <input type="text" name="Name" placeholder="Name/Company" required>
+                        <input class="formText" type="text" name="Name" placeholder="Name/Company" required>
                     </div>
                     <div class="form-col">
-                        <input type="text" name="Email" placeholder="Email" required>
+                        <input class="formText" type="text" name="Email" placeholder="Email" required>
                     </div>
                 </div>
             </div>
 
             <div class="form-group">
-                <textarea name="Message" placeholder="Message" rows="4" required></textarea>
+                <textarea class="formText" name="Message" placeholder="Message" rows="4" required></textarea>
             </div>
-            <button type="submit" id="submitButton">Send</button>
+            <button type="submit" onclick="clearFields()">Send</button>
+            <script>
+                function clearFields() {
+                  document.getElementsByClassName("textfield1").value = "";
+                }
+              </script>
         </form>
     </div>
 
