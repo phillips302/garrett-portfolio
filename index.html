@@ -1,56 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
    <head>
-      <title>Garrett Phillips' professional portfolio</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, inital-scale=1.0">
+      <title>Garrett Phillips' Page</title>
+      <link rel="'stylesheet" href="./style.css">
    </head>
    <body>
     <header>
-      <h1>My Portfolio</h1>
+      <h1>Garrett Phillips' Professional Portfolio</h1>
     </header>
   
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Write a brief introduction about yourself here.</p>
-    </section>
+    <div class="container">
+        <div id="aboutme">
+            <h2>About Me</h2>
+            <p>Write a brief introduction about yourself here.</p>
+        </div>
+    </div>
   
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li>Project 1</li>
-        <li>Project 2</li>
-        <li>Project 3</li>
-        <!-- Add more projects as needed -->
-      </ul>
-    </section>
+    <div class="container">
+        <div id="projects">
+            <h2>Projects</h2>
+            <ul>
+              <li>Project 1</li>
+              <li>Project 2</li>
+              <li>Project 3</li>
+              <!-- Add more projects as needed -->
+            </ul>
+        </div>
+    </div>
   
-    <section id="career">
-      <h2>Career</h2>
-      <ul>
-        <li>Education</li>
-        <li>Work Experience</li>
-        <li>Achievements</li>
-        <!-- Add more sections as needed -->
-      </ul>
-    </section>
+    <div class="container">
+        <div id="career">
+            <h2>Career</h2>
+            <ul>
+              <li>Education</li>
+              <li>Work Experience</li>
+              <li>Achievements</li>
+              <!-- Add more sections as needed -->
+            </ul>
+        </div>
+    </div>
   
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br>
-  
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br>
-  
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="4" required></textarea><br>
-  
-        <input type="submit" value="Send Message">
-      </form>
-    </section>
+    <div class="container">
+        <div id="contact">
+            <h2>Contact Me!</h2>
+            <form action="https://formsubmit.co/gphill1030@gmail.com" method="POST">
+                <input type="text" name="Name" placeholder="Full Name" required>
+                <input type="text" name="Company/Org" placeholder="Company/Org">
+                <input type="text" name="Email" placeholder="Email" required>
+                <textarea name="Message" placeholder="Message" rows="4" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
   
     <footer>
       <p>&copy; 2023 My Portfolio. All rights reserved.</p>
     </footer>
   </body>
-  </html>
+</html>
