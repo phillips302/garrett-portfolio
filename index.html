@@ -57,25 +57,24 @@
             <div class="form-group">
                 <div class="form-row">
                     <div class="form-col">
-                        <input type="text" name="Name" placeholder="Name/Company" required>
+                        <input class="formtext" type="text" name="Name" placeholder="Name/Company" required>
                     </div>
                     <div class="form-col">
-                        <input type="text" name="Email" placeholder="Email" required>
+                        <input class="formtext" type="text" name="Email" placeholder="Email" required>
                     </div>
                 </div>
             </div>
 
             <div class="form-group">
-                <textarea name="Message" placeholder="Message" rows="4" required></textarea>
+                <textarea class="formtext" name="Message" placeholder="Message" rows="4" required></textarea>
             </div>
             <button type="submit" id="submitButton">Send</button>
             <script>
                 document.getElementById('submitButton').addEventListener('click', function(event) {
-                  event.preventDefault(); // Prevent form submission
           
-                  var formGroups = document.getElementsByClassName('form-group');
-                  for (var i = 0; i < formGroups.length; i++) {
-                    var input = formGroups[i].getElementsByTagName('input')[0];
+                  var formTexts = document.getElementsByClassName('formtext');
+                  for (var i = 0; i < formTexts.length; i++) {
+                    var input = formTexts[i].getElementsByTagName('input')[0];
                     input.value = '';
                   }
                 });
