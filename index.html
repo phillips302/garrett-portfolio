@@ -68,7 +68,18 @@
             <div class="form-group">
                 <textarea name="Message" placeholder="Message" rows="4" required></textarea>
             </div>
-            <button type="submit">Send</button>
+            <button type="submit" id="submitButton">Send</button>
+            <script>
+                document.getElementById('submitButton').addEventListener('click', function(event) {
+                  event.preventDefault(); // Prevent form submission
+          
+                  var formGroups = document.getElementsByClassName('form-group');
+                  for (var i = 0; i < formGroups.length; i++) {
+                    var input = formGroups[i].getElementsByTagName('input')[0];
+                    input.value = '';
+                  }
+                });
+              </script>
         </form>
     </div>
 
