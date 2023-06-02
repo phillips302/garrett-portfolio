@@ -54,22 +54,22 @@
   
     <div class="container">
         <h2>Contact Me</h2>
-        <form action="https://formspree.io/f/xoqzojqa" method="POST">
-            <div class="form-group">
-                <div class="form-row">
-                    <div class="form-col">
+        <form id="contactForm" action="https://formspree.io/f/xoqzojqa" method="POST">
+            <div class="formGroup">
+                <div class="formRow">
+                    <div class="formCol">
                         <input type="text" name="Name" placeholder="Name/Company" required>
                     </div>
-                    <div class="form-col">
+                    <div class="formCol">
                         <input type="text" name="Email" placeholder="Email" required>
                     </div>
                 </div>
             </div>
 
-            <div class="form-group">
+            <div class="formGroup">
                 <textarea name="Message" placeholder="Message" rows="4" required></textarea>
             </div>
-            <button type="submit">Send</button>
+            <button type="button" onclick="finalizeForm()">Send</button>
         </form>
     </div>
 

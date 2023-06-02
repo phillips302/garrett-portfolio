@@ -1,8 +1,12 @@
 /***********************************************************
-Action that clears contact form after it has been submitted
+Utility Function that submits the contact form, then clears
+the contents of the form after waiting 2 second.
 ************************************************************/
-window.onbeforeunload = () => {
-    for(const form of document.getElementsByTagName('form')) {
-      form.reset();
-    }
+function finalizeForm() {
+    var frm = document.getElementById("contactForm");
+    frm.submit(); // Submit the form   
+    setTimeout(function() {
+        frm.reset();  // Reset all form data
+      }, 900);
+    return false; // Prevent page refresh
 }
