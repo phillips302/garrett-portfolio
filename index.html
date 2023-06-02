@@ -5,6 +5,7 @@
       <meta name="viewport" content="width=device-width, inital-scale=1.0">
       <title>GP Portfolio</title>
       <link rel="'stylesheet" href="./style.css">
+      <script src="script.js"></script>
    </head>
    <body>
     <header>
@@ -57,23 +58,18 @@
             <div class="form-group">
                 <div class="form-row">
                     <div class="form-col">
-                        <input class="formText" type="text" name="Name" placeholder="Name/Company" required>
+                        <input type="text" name="Name" placeholder="Name/Company" required>
                     </div>
                     <div class="form-col">
-                        <input class="formText" type="text" name="Email" placeholder="Email" required>
+                        <input type="text" name="Email" placeholder="Email" required>
                     </div>
                 </div>
             </div>
 
             <div class="form-group">
-                <textarea class="formText" name="Message" placeholder="Message" rows="4" required></textarea>
+                <textarea name="Message" placeholder="Message" rows="4" required></textarea>
             </div>
-            <button type="submit" onclick="clearFields();">Send</button>
-            <script>
-                function clearFields() {
-                  document.getElementsByClassName("textfield1").value = "";
-                }
-              </script>
+            <button type="submit">Send</button>
         </form>
     </div>
 
