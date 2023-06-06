@@ -1,30 +1,29 @@
-$(document).ready(function() {
-  /***********************************************************
-  Utility Function that submits the contact form, then clears
-  the contents of the form after waiting 2 second.
-  ************************************************************/
-  function finalizeForm() {
-      var frm = document.getElementById("contactForm");
-      frm.submit(); // Submit the form   
-      setTimeout(function() {
-          frm.reset();  // Reset all form data
-        }, 900);
-      return false; // Prevent page refresh
-  }
+/***********************************************************
+Utility Function that submits the contact form, then clears
+the contents of the form after waiting 2 second.
+************************************************************/
+function finalizeForm() {
+    var frm = document.getElementById("contactForm");
+    frm.submit(); // Submit the form   
+    setTimeout(function() {
+        frm.reset();  // Reset all form data
+      }, 900);
+    return false; // Prevent page refresh
+}
 
-  /***********************************************************
-  Background scroll opacity
-  ************************************************************/
-  $(window).scroll(function() {
-    var s = $(window).scrollTop(),
-    opacityVal = (s / 700.0);
-    $('.blurred-img').css('opacity', opacityVal);
-  });
+/***********************************************************
+Background scroll opacity
+************************************************************/
+$(window).scroll(function() {
+  var s = $(window).scrollTop(),
+  opacityVal = (s / 700.0);
+  $('.blurred-img').css('opacity', opacityVal);
+});
 
-  /*******************************************
-    Have focus outline only for keyboard users 
-  *******************************************/
-
+/*******************************************
+  Have focus outline only for keyboard users 
+*******************************************/
+$(function() {
   const handleFirstTab = (e) => {
     if(e.key === 'Tab') {
       document.body.classList.add('user-is-tabbing')
