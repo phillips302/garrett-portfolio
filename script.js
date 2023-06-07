@@ -7,7 +7,7 @@ function finalizeForm() {
     frm.submit(); // Submit the form   
     setTimeout(function() {
         frm.reset();  // Reset all form data
-      }, 900);
+      }, 200);
     return false; // Prevent page refresh
 }
 
