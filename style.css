@@ -19,9 +19,11 @@
     --line-height-small: 1.2;
 
     --black: #000;
-    --green: #66c26e91;
+    --not-black: #3d3d3d;
+    --green: #50965680;
+    --green-brown: #494200;
     --white: #f0e9f2;
-    --grey: #949494;
+    --grey: #d8d8d8;
 
     --container-max-width: 1180px;
     --container-normal-width: 800px;
@@ -48,7 +50,7 @@ html {
 }
 
 body {
-    font-size: var(--font-size-small);
+    font-size: var(--font-size-normal);
     font-family: var(--font-stack);
     font-weight: 400;
     color: var(--grey);
@@ -297,6 +299,36 @@ body:not(.user-is-tabbing) a:focus {
   font-family: sans-serif;
 }
 
+/**************
+Read More CSS
+**************/
+.more_text{
+  display: none;
+}
+
+.footer_more_text {
+  display: none;
+}
+
+.read_more_btn {
+  cursor: pointer;
+}
+
+.read_more_btn_footer {
+  cursor: pointer;
+  display: inline;
+  text-align: start;
+  text-decoration: underline;
+}
+
+.read_more.show_more .more_text {
+  display: inline;
+}
+
+.read_more_footer.show_more_footer .footer_more_text {
+  display: inline;
+}
+
 /* ----- Back to Top ----- */
 
 .back-to-top {
@@ -347,7 +379,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .nav__item:not(:last-child) {
-  margin-right: var(--gutter-medium);
+  margin-right: var(--gutter-normal);
 }
 
 @media(max-width: 500px) {
@@ -373,7 +405,7 @@ body:not(.user-is-tabbing) a:focus {
   display: inline-block;
   padding: 1rem 0;
   text-decoration: none;
-  color: inherit;
+  color: var(--not-black);
   transition: all .2s;
 }
 
@@ -536,9 +568,37 @@ body:not(.user-is-tabbing) a:focus {
 /* ----- Contact ----- */
 /* --------------------------------------- */
 
-.contact__info {
+form {
   max-width: var(--container-medium-width);
+  padding: 25px;
+  margin: 25px;
+  box-shadow: 0 2px 5px #2c2c2c;
+  background: var(--green-brown);
 }
+
+input, textarea {
+  width: calc(100% - 18px);
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid var(--white);
+  outline: none;
+  font: var(--font-stack);
+  font-size: var(--font-size-small);
+}
+
+.send_button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: var(--green);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--white);
+  }
+
+.send_button:hover {
+  background: var(--black);
+  }
 
 /* --------------------------------------- */
 /* ----- Footer ----- */

@@ -20,10 +20,11 @@ $(window).scroll(function() {
   $('.blurred-img').css('opacity', opacityVal);
 });
 
-/*******************************************
-  Have focus outline only for keyboard users 
-*******************************************/
 $(function() {
+
+  /*******************************************
+    Have focus outline only for keyboard users 
+  *******************************************/
   const handleFirstTab = (e) => {
     if(e.key === 'Tab') {
       document.body.classList.add('user-is-tabbing')
@@ -31,7 +32,6 @@ $(function() {
       window.removeEventListener('keydown', handleFirstTab)
       window.addEventListener('mousedown', handleMouseDownOnce)
     }
-
   }
 
   const handleMouseDownOnce = () => {
@@ -62,5 +62,27 @@ $(function() {
       isBackToTopRendered = false;
       alterStyles(isBackToTopRendered);
     }
+  });
+
+  /***********************************************************
+  Read More Buttons
+  ************************************************************/
+  const readMoreBtn = document.querySelector(".read_more_btn");
+  const readMoreText = document.querySelector(".read_more");
+
+  readMoreBtn.addEventListener("click", (e) => {
+    readMoreText.classList.toggle("show_more");
+    if (readMoreBtn.innerText === "Read More") {
+      readMoreBtn.innerText = "Read Less";
+    } else {
+      readMoreBtn.innerText = "Read More";
+    }
+  });
+
+  const readMoreFooterBtn = document.querySelector(".read_more_btn_footer");
+  const readMoreFooterText = document.querySelector(".read_more_footer");
+
+  readMoreFooterBtn.addEventListener("click", (e) => {
+    readMoreFooterText.classList.toggle("show_more_footer");
   });
 });
