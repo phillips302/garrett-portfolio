@@ -8,6 +8,7 @@
 }
 
 :root {
+    --font-size-extra-small: 1.5rem;
     --font-size-small: 1.8rem;
     --font-size-normal: 2.2rem;
     --font-size-medium: 2.8rem;
@@ -307,6 +308,7 @@ Read More CSS
 }
 
 .footer_more_text {
+  font-size: var(--font-size-extra-small);
   display: none;
 }
 
