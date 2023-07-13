@@ -318,8 +318,7 @@ body:not(.user-is-tabbing) a:focus {
 /**************************************
 Read More CSS
 **************************************/
-
-.more_text{
+.more_text {
   display: none;
 }
 
@@ -336,7 +335,7 @@ Read More CSS
 }
 
 .read_more.show_more .more_text {
-  display: inline;
+  display: block;
 }
 
 .read_more_footer.show_more_footer .footer_more_text {

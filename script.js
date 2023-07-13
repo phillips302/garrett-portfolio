@@ -71,11 +71,15 @@ $(function() {
   const readLessBtn = document.querySelector(".read_less_btn");
   const readMoreText = document.querySelector(".read_more");
   const aboutSection = document.querySelector("#about");
+  const aboutReadMore = document.querySelector("#about_read_more");
 
   readMoreBtn.addEventListener("click", (e) => {
     readMoreText.classList.toggle("show_more");
     readMoreBtn.innerText = readMoreText.classList.contains("show_more") ? "Read Less" : "Read More";
-    
+
+    if (readMoreText.classList.contains("show_more")) {
+      aboutReadMore.scrollIntoView({ behavior: "smooth" });
+    }
   });
 
   readLessBtn.addEventListener("click", () => {
