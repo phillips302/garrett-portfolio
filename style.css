@@ -21,10 +21,11 @@
 
     --black: #000;
     --not-black: #3d3d3d;
+    --dark-grey: #242424;
     --green: #50965680;
     --green-brown: #494200;
     --white: #f0e9f2;
-    --grey: #d8d8d8;
+    --grey: #f3f3f3;
 
     --container-max-width: 1180px;
     --container-normal-width: 800px;
@@ -54,7 +55,7 @@ body {
     font-size: var(--font-size-normal);
     font-family: var(--font-stack);
     font-weight: 400;
-    color: var(--grey);
+    color: var(--white);
     line-height: var(--line-height-normal);
     overflow-x: hidden;
 }
@@ -62,6 +63,18 @@ body {
 .row {
   max-width: var(--container-max-width);
   margin: 0 auto;
+}
+
+.text_container {
+  background-color: rgba(73, 66, 0, 0.7);
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--black);
+  padding: 1em;
+}
+
+.read_more_container {
+  margin: 3em;
 }
 
 @media(max-width: 1340px) {
@@ -158,6 +171,7 @@ h2::after {
 }
 
 h3 {
+  text-decoration: underline;
   font-size: var(--font-size-medium);
   margin-bottom: var(--gutter-small);
 }
@@ -219,11 +233,12 @@ body:not(.user-is-tabbing) a:focus {
 .btn {
   position: relative;
   display: inline-block;
-  padding: 1rem 4.2rem;
+  padding: 1rem 2rem;
   text-decoration: none;
   color: inherit;
-  border: 1px solid  var(--green);
+  border: 2px solid  var(--black);
   font-weight: 400;
+  cursor: pointer;
 }
 
 .btn:focus {
@@ -300,9 +315,10 @@ body:not(.user-is-tabbing) a:focus {
   font-family: sans-serif;
 }
 
-/**************
+/**************************************
 Read More CSS
-**************/
+**************************************/
+
 .more_text{
   display: none;
 }
@@ -310,10 +326,6 @@ Read More CSS
 .footer_more_text {
   font-size: var(--font-size-extra-small);
   display: none;
-}
-
-.read_more_btn {
-  cursor: pointer;
 }
 
 .read_more_btn_footer {
@@ -506,7 +518,7 @@ Read More CSS
   align-items: center;
 }
 
-@media(max-width: 900px) {
+@media(max-width: 1500px) {
   .project__box {
       align-items: initial;
       flex-direction: column-reverse;

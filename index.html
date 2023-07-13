@@ -50,26 +50,76 @@
         <div class="row">
           <h2>About Me</h2>
           <div class="about__content">
-            <div class="about__text">
-              <p>I am a senior Computer Engineering student at Purdue University,
-                pursuing concentrations in artificial intelligence, machine learning,
-                and software engineering. I am a determined learner and am confident
-                in my ability to solve complex problems, effectively communicate ideas
-                and processes, and excel in my educational and professional career.
-              <p class="read_more">
-                <span class="more_text">
-                  This is the more text entry.
-                </span>
-              </p>
+            <div class="about__text text_container">
+              <p>I am a senior Computer Engineering student at Purdue University. My goal is to 
+                utilize my leadership, interpersonal, and communication skills to gain valuable 
+                technical and professional work experience through software-oriented problem-solving 
+                opportunities.
               </p>
               <a class="read_more_btn btn">Read More</a>
               <a href="./docs/Resume_Garrett_P.pdf" class="btn">Resume</a>
             </div>
-
             <div class="about__photo-container">
-              <img class="about__photo" src="./images/profile_pic.jpg" alt="Profile Picture" />
+              <img class="about__photo" src="./images/profile_pic_glasses.JPG" alt="Profile Picture" />
             </div>
           </div>
+        </div><br>
+        <div class="read_more">
+          <span class="more_text">
+            <div class="text_container read_more_container">
+              <h2>Education</h2>
+              <p>I am currently pursuing concentrations in artificial intelligence, machine learning,
+              and software engineering. I am on track to graduate with my BS in Computer Engineering
+              December of 2024, and am planning on continuing my education with Purdue's plus 1 Masters
+              Program, graduating with my MS in Computer Engineering December of 2025.</p>
+
+              <h3>Technical Skills</h3>
+              <ul class="project__list">
+                <li>C/C++ Prgramming</li>
+                <li>Python (Numpy, Sklearn, Matplotlib)</li>
+                <li>Object-oriented programming</li>
+                <li>Large data analysis</li>
+                <li>SQLite</li>
+                <li>Git/Github</li>
+                <li>MATLAB</li>
+              </ul>
+
+              <h3>Completed Coursework</h3>
+              <ul class="project__list">
+                <li>ECE 36800, Data Structures and Algorithms in C</li>
+                <li>ECE 20875, Python for Data Science</li>
+                <li>ECE 20001/2, Electrical Engineering Fundamentals 1 & 2</li>
+                <li>ECE 26400, Advanced C programming</li>
+              </ul>
+
+              <h3>Current Coursework</h3>
+              <ul class="project__list">
+                <li>ECE 39595O, Object-Oriented Programming With C++</li>
+                <li>ECE 36200, Microprocessor Systems and Interfacing</li>
+                <li>ECE 30100, Signals and Systems</li>
+                <li>ECE 36900, Discrete Math for Computer Engineering</li>
+              </ul>
+
+
+              <h2>Extracurriculars</h2>
+              <h3>Peer Success Coach</h3>
+              <p>
+                As a Peer Success Coache (PSC), I provide Purdue undergraduate students an opportunity 
+                to meet one-on-one as they navigate the college environment and learn to succeed 
+                academically, socially, and personally. I meet with a pool of students weekly and biweekly
+                to offer guidance while navigating life at Purdue.
+              </p>
+              <p><b>I guide students through...</b></p>
+              <ul class="project__list">
+                <li>Studying for exams</li>
+                <li>Time management</li>
+                <li>Exploring career options</li>
+                <li>Connecting with campus resources and academic advisors</li>
+              </ul>
+
+              <a class="read_less_btn btn">Read Less</a>
+            </div>
+          </span>
         </div>
       </section>
 
@@ -79,22 +129,31 @@
       <section class="projects" id="projects">
         <div class="row">
           <h2>Projects</h2>
-          <div class="project__boxes">
+          <div class="project__boxes text_container">
 
-            <!-- Each div with the work__box class is a project. -->
             <div class="project__box">
               <div class="project__text">
-                <h3>Project Template</h3>
+                <h3>Raspberry Pi Wifi Proxy Filter</h3>
                 <p>
-                  Description of project here.
+                  I undertook a comprehensive project leveraging the capabilities of Pi-hole, an advanced 
+                  software solution designed to function as a network-wide ad blocker. Through assembling 
+                  the necessary hardware and configuring the Raspberry Pi, I successfully established a 
+                  proxy filter that effectively blocks ad requests and queries. This implementation enables 
+                  seamless ad-blocking across websites, mobile apps, and smart TVs without the need for 
+                  additional local software. By monitoring the traffic routed through the Raspberry Pi, 
+                  the software is able to stop the requests before they populate further, ultimately 
+                  enhancing network speed and optimizing data consumption. The project includes a 
+                  user-friendly web interface for convenient interaction and comprehensive network 
+                  traffic analysis.
                 </p>
+                <!--
                 <p>List of skills used</p>
                 <ul class="project__list">
                   <li>HTML</li>
                   <li>CSS</li>
                   <li>JavaScript</li>
                 </ul>
-
+                -->
                 <div class="project__links">
                   <a>
                     Visit Site <span>&rarr;</span>
@@ -105,7 +164,7 @@
                 </div>
               </div>
               <div class="project__image-box">
-                <img src="./images/House.jpg" class="project__image" alt="Project 1" />
+                <img src="./images/rasp_pi_temp.jpg" class="project__image" alt="Project 1" />
               </div>
             </div>
           </div>
@@ -172,7 +231,7 @@
         </ul>
 
         <p>
-          &copy; Garrett Phillips 2023 - Click <a class="read_more_btn_footer" class="link">here</a> to see the sources
+          &copy;Garrett Phillips 2023 - Click <a class="read_more_btn_footer" class="link">here</a> to see the sources
           and credits.
           <p class="read_more_footer">
             <span class="footer_more_text">

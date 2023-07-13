@@ -68,16 +68,21 @@ $(function() {
   Read More Buttons
   ************************************************************/
   const readMoreBtn = document.querySelector(".read_more_btn");
+  const readLessBtn = document.querySelector(".read_less_btn");
   const readMoreText = document.querySelector(".read_more");
+  const aboutSection = document.querySelector("#about");
 
   readMoreBtn.addEventListener("click", (e) => {
     readMoreText.classList.toggle("show_more");
-    if (readMoreBtn.innerText === "Read More") {
-      readMoreBtn.innerText = "Read Less";
-    } else {
-      readMoreBtn.innerText = "Read More";
-    }
+    readMoreBtn.innerText = readMoreText.classList.contains("show_more") ? "Read Less" : "Read More";
+    
   });
+
+  readLessBtn.addEventListener("click", () => {
+    readMoreText.classList.remove("show_more");
+    readMoreBtn.innerText = "Read More";
+    aboutSection.scrollIntoView({ behavior: "smooth" });
+  })
 
   const readMoreFooterBtn = document.querySelector(".read_more_btn_footer");
   const readMoreFooterText = document.querySelector(".read_more_footer");
