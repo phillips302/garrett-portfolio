@@ -26,8 +26,8 @@
         <nav class="nav" role="navigation">
           <ul class="nav__items">
             <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
-            <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-            <!-- <li class="nav__item"><a href="#career" class="nav__link">Career</a></li> -->
+            <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+            <li class="nav__item"><a href="#projects" class="nav__link">Personal Projects</a></li>
             <li class="nav__item"><a href="#contact" class="nav__link">Contact Me</a></li>
           </ul>
         </nav>
@@ -37,7 +37,7 @@
           <h1 class="heading-primary">
             <span>Garrett Phillips</span>
           </h1>
-          <p>Computer Engineering Student at Purdue University.</p>
+          <p>Computer Engineering Student at Purdue University</p>
           <a href="#contact" class="btn">Get in touch</a>
         </div>
       </div>
@@ -58,7 +58,6 @@
                   opportunities.
                 </p>
                 <a class="read_more_btn btn">Read More</a>
-                <a href="./docs/Resume_Garrett_P.pdf" class="btn">Resume</a>
               </div>
               <div class="about__photo-container">
                 <img class="about__photo" src="./images/profile_pic_glasses.JPG" alt="Profile Picture" />
@@ -68,44 +67,10 @@
           <div class="read_more" id="about_read_more">
             <span class="more_text">
               <div class="text_container read_more_container">
-                <h2>Education</h2>
-                <p>I am currently pursuing concentrations in artificial intelligence, machine learning,
-                and software engineering. I am on track to graduate with my BS in Computer Engineering
-                December of 2024, and am planning on continuing my education with Purdue's plus 1 Masters
-                Program, graduating with my MS in Computer Engineering December of 2025.</p>
-
-                <h3>Technical Skills</h3>
-                <ul class="project__list">
-                  <li>C/C++ Prgramming</li>
-                  <li>Python (Numpy, Sklearn, Matplotlib)</li>
-                  <li>Object-oriented programming</li>
-                  <li>Large data analysis</li>
-                  <li>SQLite</li>
-                  <li>Git/Github</li>
-                  <li>MATLAB</li>
-                </ul>
-
-                <h3>Completed Coursework</h3>
-                <ul class="project__list">
-                  <li>ECE 36800, Data Structures and Algorithms in C</li>
-                  <li>ECE 20875, Python for Data Science</li>
-                  <li>ECE 20001/2, Electrical Engineering Fundamentals 1 & 2</li>
-                  <li>ECE 26400, Advanced C programming</li>
-                </ul>
-
-                <h3>Current Coursework</h3>
-                <ul class="project__list">
-                  <li>ECE 39595O, Object-Oriented Programming With C++</li>
-                  <li>ECE 36200, Microprocessor Systems and Interfacing</li>
-                  <li>ECE 30100, Signals and Systems</li>
-                  <li>ECE 36900, Discrete Math for Computer Engineering</li>
-                </ul>
-
-
                 <h2>Extracurriculars</h2>
-                <h3>Peer Success Coach</h3>
+                <h3>Peer Success Coaching - Purdue Academic Success Center</h3>
                 <p>
-                  As a Peer Success Coache (PSC), I provide Purdue undergraduate students an opportunity 
+                  As a Peer Success Coach (PSC), I provide Purdue undergraduate students an opportunity 
                   to meet one-on-one as they navigate the college environment and learn to succeed 
                   academically, socially, and personally. I meet with a pool of students weekly and biweekly
                   to offer guidance while navigating life at Purdue.
@@ -125,21 +90,71 @@
         </div>
       </section>
 
+      
+      <!-- Education -->
+
+      <section class="education" id="education">
+        <div class="row">
+          <h2>Education</h2>
+          
+          <div class="text_container">
+            <p></p>
+            <p>I am a third year, Senior Computer Engineering student and am currently pursuing 
+              concentrations in artificial intelligence, machine learning,
+              and software engineering. I will take Senior Design the spring semester 2024, 
+              and am on track to graduate with my BS in Computer Engineering by
+              December of 2024.</p>
+            <p>I plan on furthering my education with Purdue's +1 Masters
+              Program. This program offers me the opportunity to take graduate level classes in my 
+              undergraduate term, enabling me to graduate with my MS in Computer Engineering by December 
+              of 2025.</p>
+
+              <h3>Technical Skills</h3>
+              <ul class="project__list">
+                <li>C/C++ Prgramming</li>
+                <li>Python (Numpy, Sklearn, Matplotlib)</li>
+                <li>Object-oriented programming</li>
+                <li>Large data analysis</li>
+                <li>SQLite</li>
+                <li>Git/Github</li>
+                <li>MATLAB</li>
+              </ul>
+
+              <h3>Completed Coursework</h3>
+              <ul class="project__list">
+                <li>ECE 36800, Data Structures and Algorithms in C</li>
+                <li>ECE 20875, Python for Data Science</li>
+                <li>ECE 20001/2, Electrical Engineering Fundamentals 1 & 2</li>
+                <li>ECE 26400, Advanced C programming</li>
+              </ul>
+
+              <h3>Current Coursework</h3>
+              <ul class="project__list">
+                <li>ECE 39595O, Object-Oriented Programming With C++</li>
+                <li>ECE 36200, Microprocessor Systems and Interfacing</li>
+                <li>ECE 30100, Signals and Systems</li>
+                <li>ECE 36900, Discrete Math for Computer Engineering</li>
+              </ul>
+
+              <a href="./docs/Resume_Garrett_P.pdf" class="btn">View my resume here</a>
+          </div>
+        </div>
+      </section>
 
       <!-- Projects -->
 
       <section class="projects" id="projects">
         <div class="row">
-          <h2>Projects</h2>
+          <h2>Personal Projects</h2>
           <div class="project__boxes text_container">
 
             <div class="project__box">
               <div class="project__text">
                 <h3>Raspberry Pi Wifi Proxy Filter</h3>
                 <p>
-                  I undertook a comprehensive project leveraging the capabilities of Pi-hole, an advanced 
+                  In this project, I utilized the capabilities of Pi-hole, an advanced 
                   software solution designed to function as a network-wide ad blocker. Through assembling 
-                  the necessary hardware and configuring the Raspberry Pi, I successfully established a 
+                  the necessary hardware and configuration of a <i>Raspberry Pi Zero w</i>, I successfully established a 
                   proxy filter that effectively blocks ad requests and queries. This implementation enables 
                   seamless ad-blocking across websites, mobile apps, and smart TVs without the need for 
                   additional local software. By monitoring the traffic routed through the Raspberry Pi, 
