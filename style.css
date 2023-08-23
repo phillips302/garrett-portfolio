@@ -551,6 +551,7 @@ Read More CSS
 }
 
 .project__image-box {
+  position: relative;
   float: right;
   margin: 10px 10px 5px 10px;
   max-width: 60%;
@@ -563,6 +564,57 @@ Read More CSS
       max-width: 100%;
       padding: var(--gutter-small) 0;
   }
+}
+
+/* --------------------------------------- */
+/* ----- Image Slideshow ----- */
+/* --------------------------------------- */
+.slide {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.slide1 {
+  display: block;
+}
+
+.numbertext {
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--white);
+  font-size: 12px;
+  padding: 8px 12px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 16px;
+  color: var(--white);
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+  user-select: none;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* --------------------------------------- */
