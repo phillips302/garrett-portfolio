@@ -74,7 +74,13 @@ body {
 }
 
 .read_more_container {
-  margin: 3em;
+  margin: 5em;
+}
+
+@media (max-width: 768px) {
+  .read_more_container {
+    margin: 2em; /* Adjust the margin as per your desired width */
+  }
 }
 
 @media(max-width: 1340px) {
@@ -499,7 +505,7 @@ Read More CSS
 
 @media(min-width: 901px) {
   .about__text {
-      flex: 0 0 35%;
+      flex: 0 0 45%;
   }
   
   .about__photo-container {
