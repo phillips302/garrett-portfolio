@@ -564,9 +564,12 @@ Read More CSS
   width:70%;
 }
 
-.coursework {
-  align-items: flex-start;
-  columns: 2;
+.skills {
+  display: flex;
+}
+
+.column {
+  flex: 1;
 }
 
 .project__list {
