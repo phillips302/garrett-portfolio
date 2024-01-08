@@ -564,6 +564,17 @@ Read More CSS
   width:70%;
 }
 
+.marathon_pic_cont {
+  margin: 0 auto;
+}
+
+.marathon_pic {
+  display: block;
+  margin: 0 auto;
+  max-width: 60%;
+  height: auto;
+}
+
 .skills {
   display: flex;
 }
