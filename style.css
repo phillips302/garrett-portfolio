@@ -78,16 +78,6 @@ body {
   padding: 1em;
 }
 
-.read_more_container {
-  margin: 5em;
-}
-
-@media (max-width: 768px) {
-  .read_more_container {
-    margin: 2em; /* Adjust the margin as per your desired width */
-  }
-}
-
 @media(max-width: 1340px) {
   .row {
       max-width: 1100px;
@@ -405,28 +395,28 @@ Read More CSS
   margin-right: var(--gutter-normal);
 }
 
-@media(max-width: 500px) {
-  .nav {
-      justify-content: center;
+@media(max-width: 550px) {
+  .nav__items {
+      flex-direction: column;
   }
 }
 
 @media(max-width: 400px) {
   .nav__item:not(:last-child) {
-      margin-right: var(--gutter-normal);
+      margin-bottom: var(--gutter-small-1);
   }
 }
 
 @media(max-width: 300px) {
   .nav {
       font-size: var(--font-size-small);
+      margin-bottom: var(--gutter-small-1);
   }
 }
 
 .nav__link {
   position: relative;
   display: inline-block;
-  padding: 1rem 0;
   text-decoration: none;
   color: var(--not-black);
   transition: all .2s;
@@ -594,11 +584,24 @@ Read More CSS
   height: auto;
 }
 
+.project__image-box2 {
+  position: relative;
+  align-self: flex-start;
+  margin: 10px 10px 10px 10px;
+  max-width: 500px;
+  max-height: auto;
+}
+
 @media(max-width: 900px) {
   .project__image-box {
-      flex: 1;
-      max-width: 100%;
-      padding: var(--gutter-small) 0;
+    flex: 1;
+    max-width: 100%;
+    padding: var(--gutter-small) 0;
+  }
+
+  .project__image-box2 {
+    max-width: 400px;
+    padding: var(--gutter-small) 0;
   }
 
   .coursework {
@@ -616,6 +619,14 @@ Read More CSS
 /* ----- Image Slideshow ----- */
 /* --------------------------------------- */
 .slide {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.slide2 {
   position: relative;
   display: flex;
   align-items: center;
@@ -661,6 +672,22 @@ Read More CSS
 
 .prev:hover, .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* --------------------------------------- */
+/* ----- Two Column Layout ----- */
+/* --------------------------------------- */
+.two-column-layout {
+  display: flex;
+  align-items: center; /* Aligns text and image vertically centered */
+  gap: 5rem; /* Adds space between the text and image */
+}
+
+.book-image {
+  width: 150px; /* Adjust width as needed */
+  height: auto;
+  object-fit: cover; /* Maintains image aspect ratio */
 }
 
 /* --------------------------------------- */

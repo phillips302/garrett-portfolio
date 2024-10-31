@@ -80,7 +80,14 @@ $(function() {
 
   // Show the additional content when "Read More" is clicked
   document.querySelector('.read_more_btn').addEventListener('click', function() {
-    document.getElementById('about_read_more').style.display = 'block';
+    document.getElementById('about_read_more').style.display = 'flex';
+    document.getElementById('about_read_more').style.flexDirection = 'column';
+    document.getElementById('about_read_more').style.alignItems = 'center';
+    document.getElementById('about_read_more').style.maxWidth = '1180px';
+    document.getElementById('about_read_more').style.margin = '0 auto';
+    document.getElementById('about_read_more').style.justifyContent = 'flex-start';
+    document.getElementById('about_read_more').style.padding = '1 em';
+
     this.style.display = 'none'; // Hide the "Read More" button
   });
 
@@ -111,6 +118,29 @@ function plusSlides(n) {
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("slide");
+
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slides[slideIndex-1].style.display = "block";
+}
+
+/***********************************************************
+Image Slideshow2
+************************************************************/
+let slideIndex2 = 1;
+showSlides2(slideIndex2);
+
+function plusSlides2(n) {
+  showSlides2(slideIndex += n);
+}
+
+function showSlides2(n) {
+  let i;
+  let slides = document.getElementsByClassName("slide2");
 
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
