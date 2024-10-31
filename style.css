@@ -331,10 +331,6 @@ body:not(.user-is-tabbing) a:focus {
 /**************************************
 Read More CSS
 **************************************/
-.more_text {
-  display: none;
-}
-
 .footer_more_text {
   font-size: var(--font-size-extra-small);
   display: none;
@@ -353,6 +349,7 @@ Read More CSS
 
 .read_more_footer.show_more_footer .footer_more_text {
   display: inline;
+  text-align: center;
 }
 
 /* ----- Back to Top ----- */

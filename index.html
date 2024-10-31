@@ -26,6 +26,7 @@
         <nav class="nav" role="navigation">
           <ul class="nav__items">
             <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+            <li class="nav__item"><a href="#extracurriculars" class="nav__link">Extracurriculars</a></li>
             <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
             <li class="nav__item"><a href="#projects" class="nav__link">Personal Projects</a></li>
             <li class="nav__item"><a href="#contact" class="nav__link">Contact Me</a></li>
@@ -61,67 +62,73 @@
                   contribute meaningfully to the world, I am excited about the endless 
                   possibilities that lie ahead.
                 </p>
-                <a class="read_more_btn btn">Read More</a>
               </div>
               <div class="about__photo-container">
                 <img class="about__photo" src="./images/profile_pic_england.JPG" alt="Profile Picture" />
               </div>
             </div>
           </div>
-          <div class="read_more" id="about_read_more">
-            <span class="more_text">
-              <div class="read_more_container">
-                <h2>Extracurriculars</h2>
-                <div class="text_container">
-                
-                  <h3>Peer Success Coaching - Purdue Academic Success Center</h3>
-                  <p>
-                    As a Peer Success Coach (PSC), I provide Purdue undergraduate students an opportunity 
-                    to meet one-on-one as they navigate the college environment and learn to succeed 
-                    academically, socially, and personally. I meet with a pool of students weekly and biweekly
-                    to offer guidance while navigating life at Purdue.
-                  </p>
-                  <p><b>I guide students through...</b></p>
-                  <ul class="project__list">
-                    <li>Time management</li>
-                    <li>Life and career goals</li>
-                    <li>Study strategies and test preparation</li>
-                    <li>Connecting with campus resources and academic advisors</li>
-                  </ul>
-  
-                  <p>
-                    This opportunity has provided me with approaches on how to be an effective coach and 
-                    mentor to studetns of a wide variety of diciplines and ages. I feel more confident 
-                    engaging in productive, professional communication with my peers and am learning myself
-                    how to be a better student, son, leader, and person. I am thankful for this opportunity
-                    and am proud of the students I have helpped succeed.
-                  </p>
-    
-                  <h3>Undergraduate Teaching Asssistant - ECE 20875, Python for Data Science</h3>
+        </div>
+      </section>
+
+      <!-- Extracurriculars -->
+      <section class="about" id="extracurriculars">
+        <div class="about">
+          <div class="row">
+            <h2>Extracurriculars</h2>
+            <div class="about__content">
+              <div class="text_container">
+                <h3>Peer Success Coaching - Purdue Academic Success Center</h3>
+                <p>
+                  As a Peer Success Coach (PSC), I provide Purdue undergraduate students an opportunity 
+                  to meet one-on-one as they navigate the college environment and learn to succeed 
+                  academically, socially, and personally. I meet with a pool of students weekly and biweekly
+                  to offer guidance while navigating life at Purdue.
+                </p>
+                <p><b>I guide students through...</b></p>
+                <ul class="project__list">
+                  <li>Time management</li>
+                  <li>Life and career goals</li>
+                  <li>Study strategies and test preparation</li>
+                  <li>Connecting with campus resources and academic advisors</li>
+                </ul>
+                <p>
+                  This opportunity has provided me with approaches on how to be an effective coach and 
+                  mentor to students of a wide variety of disciplines and ages. I feel more confident 
+                  engaging in productive, professional communication with my peers and am learning myself
+                  how to be a better student, son, leader, and person. I am thankful for this opportunity
+                  and am proud of the students I have helped succeed.
+                </p>
+                <!-- Read More button -->
+                <a class="read_more_btn btn">Read More</a>
+      
+                <!-- Hidden additional content -->
+                <div class="read_more" id="about_read_more" style="display: none;">
+                  <h3>Undergraduate Teaching Assistant - ECE 20875, Python for Data Science</h3>
                   <p>
                     I support students in creating and optimizing problem-solving approaches to data science 
-                    problems by utilizing Python and exploring Python's built in functions, imports, data visualization 
+                    problems by utilizing Python and exploring Python's built-in functions, imports, data visualization 
                     tools like Matplotlib, and practical applications of libraries like NumPy and Scikit-learn. I hold 
                     office hours to assist students with lecture material, approaches to homework solutions, and general
                     Python knowledge.
                   </p>
-    
+  
                   <h3>Purdue Hurling Club Team</h3>
                   <p>
-                    Hurling is a traditionally Irish 
+                    Hurling is a traditional Irish 
                     sport that combines elements of field hockey, lacrosse, and rugby. Our club takes pride in 
-                    representing Purdue University as we compete against other universities accross the country. 
-                    In March 2024, we participated in the National Collegiate Gaelic Athetic Association (NCGAA) 
+                    representing Purdue University as we compete against other universities across the country. 
+                    In March 2024, we participated in the National Collegiate Gaelic Athletic Association (NCGAA) 
                     National Tournament in Salt Lake City, Utah, where we got 1st place and became the Collegiate 
                     Hurling National Champions. After our most recent trip to Pittsburgh, Pennsylvania, we are 
                     now repeat regional champions and are looking to defend our title at Nationals this spring.
                   </p>
-                  <div><img src="./images/hurling_pic.jpg" alt="Hurling Picture" /></div><br>
-                  <p></p>
+                  <div><img class="marathon_pic" src="./images/hurling_pic.jpg" alt="Hurling Picture" /></div><br>
+  
                   <h3>Long-Distance Running</h3>
                   <p>
                     In my free time, I enjoy running and participating in long-distance running events. In October
-                    of 2023, I completed the Indianapolis Monumental Marathon; my first marthon ever! Running has 
+                    of 2023, I completed the Indianapolis Monumental Marathon; my first marathon ever! Running has 
                     been an excellent way for me to stay active, relieve stress, and set personal goals for myself. 
                   </p>
                   <p>
@@ -132,17 +139,20 @@
                     proud of the progress I have made and am excited to see where my running journey takes me next.
                   </p>
                   <div class="marathon_pic_cont"><img class="marathon_pic" src="./images/marathon_pic.JPG" alt="Marathon Picture" /></div>
-                  <p></p>
-                  <a class="read_less_btn btn">Read Less</a>
+  
+                  <!-- Read Less button -->
+                  <div class="read_more_footer">
+                    <a class="read_less_btn btn">Read Less</a>
+                  </div>
                 </div>
-
+                <!-- End of hidden content -->
+      
               </div>
-            </span>
+            </div>
           </div>
         </div>
-      </section>
+      </section>      
 
-      
       <!-- Education -->
 
       <section class="education" id="education">
@@ -164,7 +174,7 @@
 
               <p>
                 <b>Overall GPA:</b> 3.78<br>
-                <b>ECE Major GPA:</b> 3.83
+                <b>ECE Major GPA:</b> 3.80
               </p>
 
               <div class="skills">

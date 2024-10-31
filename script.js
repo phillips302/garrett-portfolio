@@ -70,23 +70,25 @@ $(function() {
   const readMoreBtn = document.querySelector(".read_more_btn");
   const readLessBtn = document.querySelector(".read_less_btn");
   const readMoreText = document.querySelector(".read_more");
-  const aboutSection = document.querySelector("#about");
-  const aboutReadMore = document.querySelector("#about_read_more");
-
-  readMoreBtn.addEventListener("click", (e) => {
-    readMoreText.classList.toggle("show_more");
-    readMoreBtn.innerText = readMoreText.classList.contains("show_more") ? "Read Less" : "Read More";
-
-    if (readMoreText.classList.contains("show_more")) {
-      aboutReadMore.scrollIntoView({ behavior: "smooth" });
-    }
-  });
+  const extraSection = document.querySelector("#extracurriculars");
 
   readLessBtn.addEventListener("click", () => {
     readMoreText.classList.remove("show_more");
     readMoreBtn.innerText = "Read More";
-    aboutSection.scrollIntoView({ behavior: "smooth" });
+    extraSection.scrollIntoView({ behavior: "smooth" });
   })
+
+  // Show the additional content when "Read More" is clicked
+  document.querySelector('.read_more_btn').addEventListener('click', function() {
+    document.getElementById('about_read_more').style.display = 'block';
+    this.style.display = 'none'; // Hide the "Read More" button
+  });
+
+  // Hide the additional content when "Read Less" is clicked
+  document.querySelector('.read_less_btn').addEventListener('click', function() {
+    document.getElementById('about_read_more').style.display = 'none';
+    document.querySelector('.read_more_btn').style.display = 'inline-block'; // Show the "Read More" button again
+  });
 
   const readMoreFooterBtn = document.querySelector(".read_more_btn_footer");
   const readMoreFooterText = document.querySelector(".read_more_footer");
